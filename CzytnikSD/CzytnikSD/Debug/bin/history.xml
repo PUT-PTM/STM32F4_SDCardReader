@@ -1,17 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="4.8.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=CzytnikSD.map -O0 --gc-sections -LD:\CooCox\CoIDE\configuration\ProgramData\CzytnikSD -TD:\CooCox\CoIDE\configuration\ProgramData\CzytnikSD/arm-gcc-link.ld -g">
-      <target file="CzytnikSD.elf" lastModified="145410d341a">
-         <source file="..\obj\stm32f4xx_sdio.o" lastModified="1453d9aeb95"/>
-         <source file="..\obj\sdcard.o" lastModified="1453d9aed6f"/>
-         <source file="..\obj\startup_stm32f4xx.o" lastModified="1453d9aedc5"/>
-         <source file="..\obj\stm32f4xx_crc.o" lastModified="1453d9aee3a"/>
-         <source file="..\obj\main.o" lastModified="145410d3032"/>
-         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1453d9aef4b"/>
-         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1453d9aefcf"/>
-         <source file="..\obj\system_stm32f4xx.o" lastModified="1453d9af03f"/>
-         <source file="..\obj\stm32f4xx_dma.o" lastModified="1453d9af0d3"/>
-         <source file="..\obj\misc.o" lastModified="1453d9af16e"/>
+   <processor signature="4.8.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=CzytnikSD.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\CzytnikSD -TC:\CooCox\CoIDE\configuration\ProgramData\CzytnikSD/arm-gcc-link.ld -g">
+      <target file="CzytnikSD.elf" lastModified="14541231f16">
+         <source file="..\obj\stm32f4xx_sdio.o" lastModified="14541071077"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="145410710e9"/>
+         <source file="..\obj\stm32f4xx_crc.o" lastModified="1454107114d"/>
+         <source file="..\obj\main.o" lastModified="14541231ad1"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14541071319"/>
+         <source file="..\obj\konfiguracja.o" lastModified="1454121a081"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14541071384"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="145410713de"/>
+         <source file="..\obj\stm32f4xx_dma.o" lastModified="14541071451"/>
+         <source file="..\obj\stm324xg_eval_sdio_sd.o" lastModified="1454121a366"/>
+         <source file="..\obj\misc.o" lastModified="145410715cc"/>
       </target>
    </processor>
 </history>

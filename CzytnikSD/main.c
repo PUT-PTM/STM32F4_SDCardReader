@@ -1,29 +1,28 @@
-#include "include.h"
-#include "sdcard.h"
+
+#include "main.h"
 
 
-SD_CardInfo kartaSD;
-uint8_t cardType = 314;
-int cardCap = 314;
-int cardBlock = 314;
+/*
+	CARDDETECT = PC2 (Retargetable)
+	CLK = PC12
+	CMD = PD2
+	D0 = PC8
+	D1 = PC9
+	D2 = PC10
+	D3 = PC11
+	VDD = 3V
+	VSS = GND
+
+	!! DETECT = PC13
+ */
 
 int main(void)
 {
+	SD_Error Status;
 	SystemInit();
-
-
-	SD_PowerON();
-	SD_GetCardInfo(&kartaSD);
-	SD_SelectDeselect(kartaSD.RCA << 16);
-	SD_EnableWideBusOperation(SDIO_BusWide_4b);
-
-	cardType = kartaSD.CardType;
-	cardCap = kartaSD.CardCapacity;
-	cardBlock = kartaSD.CardBlockSize;
+	Status = SD_Init();
 
 
 
-    while(1)
-    {
-    }
-}
+  }
+

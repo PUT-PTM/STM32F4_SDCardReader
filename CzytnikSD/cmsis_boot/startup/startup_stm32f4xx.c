@@ -6,7 +6,7 @@
   * @date      03/05/2012
   * @brief     STM32F4xx Devices vector table for RIDE7 toolchain. 
   *            This module performs:
-  *                - Set the initial SP
+  *                - Set the cial SP
   *                - Set the initial PC == Reset_Handler,
   *                - Set the vector table entries with the exceptions ISR address
   *                - Configure the clock system and the external SRAM mounted on 
