@@ -1,46 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\CzytnikSD\cmsis -I..\..\..\workspace\CzytnikSD\cmsis_lib -I..\..\..\workspace\CzytnikSD\cmsis_boot -I..\..\..\workspace\CzytnikSD\cmsis_lib\include -I..\..\..\..\..\Users\rolek\Desktop -I..\..\..\workspace -I..\..\..\workspace\CzytnikSD -I..\..\..\..\..\Users -I..\..\..\..\..\Users\rolek">
-      <target file="stm324xg_eval.o" lastModified="14540f5efc1">
-         <source file="..\..\..\..\..\..\..\Users\rolek\Desktop\stm324xg_eval.c" lastModified="14540f08ed4"/>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Rolek\Documents\CooCox\CzytnikSD -I..\..\..\..\..\Users\Rolek\Documents\CooCox\CzytnikSD\CzytnikSD -I..\..\..\..\..\Users\Rolek\Documents\CooCox\CzytnikSD\CzytnikSD\cmsis_boot -I..\..\..\..\..\Users\Rolek\Documents\CooCox\CzytnikSD\CzytnikSD\cmsis_lib\include -I..\..\..\..\..\Users\Rolek\Documents\CooCox\CzytnikSD\CzytnikSD\cmsis_lib -I..\..\..\..\..\Users\Rolek\Documents\CooCox\CzytnikSD\CzytnikSD\cmsis -I..\..\..\..\..\Users\Rolek\Documents\CooCox">
+      <target file="stm32f4xx_gpio.o" lastModified="14546cac351">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14546c7d6da"/>
       </target>
-      <target file="sdcard.o" lastModified="1453c8db7cb">
-         <source file="..\..\..\..\..\..\..\Users\rolek\Desktop\sdcard.c" lastModified="1453c8db16a"/>
+      <target file="stm32f4xx_dma.o" lastModified="14546cac452">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="14546c7d6d8"/>
       </target>
-   </processor>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\CzytnikSD\cmsis -I..\..\..\workspace\CzytnikSD\cmsis_lib -I..\..\..\workspace\CzytnikSD\cmsis_boot -I..\..\..\workspace\CzytnikSD\cmsis_lib\include -I..\..\..\..\..\Users\rolek\Desktop -I..\..\..\workspace -I..\..\..\workspace\CzytnikSD -I..\..\.. -I..\..\..\..\..\Users -I..\..\..\..\..\Users\rolek">
-      <target file="stm32f4xx_gpio.o" lastModified="14541071384">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14508bc69ac"/>
+      <target file="stm32f4xx_crc.o" lastModified="14546cac074">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_crc.c" lastModified="14546c7d6d8"/>
       </target>
-      <target file="stm32f4xx_dma.o" lastModified="14541071451">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="14508bde623"/>
+      <target file="konfiguracja.o" lastModified="14546cac2d0">
+         <source file="..\..\..\konfiguracja.c" lastModified="14546c7d6dd"/>
       </target>
-      <target file="stm32f4xx_crc.o" lastModified="1454107114d">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_crc.c" lastModified="144fa847939"/>
+      <target file="system_stm32f4xx.o" lastModified="14546cac3ad">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14546c7d6d1"/>
       </target>
-      <target file="konfiguracja.o" lastModified="1454121a081">
-         <source file="..\..\..\konfiguracja.c" lastModified="145412005a1"/>
+      <target file="startup_stm32f4xx.o" lastModified="14546cabfab">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14546c7d6cb"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="145410713de">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14508bae357"/>
+      <target file="main.o" lastModified="14546cb16d6">
+         <source file="..\..\..\main.c" lastModified="14546cb148c"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="145410710e9">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14541062d82"/>
+      <target file="stm32f4xx_sdio.o" lastModified="14546cabdad">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="14546c7d6dc"/>
       </target>
-      <target file="main.o" lastModified="14541231ad1">
-         <source file="..\..\..\main.c" lastModified="14541231508"/>
+      <target file="stm324xg_eval_sdio_sd.o" lastModified="14546cac520">
+         <source file="..\..\..\stm324xg_eval_sdio_sd.c" lastModified="14546c7d6df"/>
       </target>
-      <target file="stm32f4xx_sdio.o" lastModified="14541071077">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="14536339fc3"/>
+      <target file="stm32f4xx_rcc.o" lastModified="14546cac1a3">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14546c7d6db"/>
       </target>
-      <target file="stm324xg_eval_sdio_sd.o" lastModified="1454121a366">
-         <source file="..\..\..\stm324xg_eval_sdio_sd.c" lastModified="14540e1d222"/>
-      </target>
-      <target file="stm32f4xx_rcc.o" lastModified="14541071319">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="145377a4d11"/>
-      </target>
-      <target file="misc.o" lastModified="145410715cc">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14538c286ef"/>
+      <target file="misc.o" lastModified="14546cac573">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14546c7d6d7"/>
       </target>
    </processor>
 </history>

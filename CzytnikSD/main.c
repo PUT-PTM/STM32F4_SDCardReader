@@ -1,6 +1,6 @@
 
-#include "main.h"
 
+#include "include.h"
 
 /*
 	CARDDETECT = PC2 (Retargetable)
