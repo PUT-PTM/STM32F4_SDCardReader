@@ -1,28 +1,29 @@
+#include "usbd_msc_core.h"
+#include "usbd_usr.h"
+#include "usbd_desc.h"
+#include "usb_conf.h"
 
+#ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+  #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+    #pragma data_alignment=4
+  #endif
+#endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
 
-#include "include.h"
-
-/*
-	CARDDETECT = PC2 (Retargetable)
-	CLK = PC12
-	CMD = PD2
-	D0 = PC8
-	D1 = PC9
-	D2 = PC10
-	D3 = PC11
-	VDD = 3V
-	VSS = GND
-
-	!! DETECT = PC13
- */
+__ALIGN_BEGIN USB_OTG_CORE_HANDLE     USB_OTG_dev __ALIGN_END ;
 
 int main(void)
 {
-	SD_Error Status;
-	SystemInit();
-	Status = SD_Init();
 
-
-
-  }
-
+	  USBD_Init(&USB_OTG_dev,
+	#ifdef USE_USB_OTG_HS
+	            USB_OTG_HS_CORE_ID,
+	#else
+	            USB_OTG_FS_CORE_ID,
+	#endif
+	            &USR_desc,
+	            &USBD_MSC_cb,
+	            &USR_cb);
+    while(1)
+    {
+    }
+}

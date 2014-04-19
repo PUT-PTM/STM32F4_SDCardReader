@@ -413,24 +413,24 @@ void RCC_LSICmd(FunctionalState NewState)
   * @note   You have to set the PLLM parameter correctly to ensure that the VCO input
   *         frequency ranges from 1 to 2 MHz. It is recommended to select a frequency
   *         of 2 MHz to limit PLL jitter.
-  *    4
+  *  
   * @param  PLLN: specifies the multiplication factor for PLL VCO output clock
   *          This parameter must be a number between 192 and 432.
   * @note   You have to set the PLLN parameter correctly to ensure that the VCO
   *         output frequency is between 192 and 432 MHz.
-  *   192
+  *   
   * @param  PLLP: specifies the division factor for main system clock (SYSCLK)
   *          This parameter must be a number in the range {2, 4, 6, or 8}.
   * @note   You have to set the PLLP parameter correctly to not exceed 168 MHz on
   *         the System clock frequency.
-  *  2
+  *  
   * @param  PLLQ: specifies the division factor for OTG FS, SDIO and RNG clocks
   *          This parameter must be a number between 4 and 15.
   * @note   If the USB OTG FS is used in your application, you have to set the
   *         PLLQ parameter correctly to have 48 MHz clock for the USB. However,
   *         the SDIO and RNG need a frequency lower than or equal to 48 MHz to work
   *         correctly.
-  *   4
+  *   
   * @retval None
   */
 void RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ)
