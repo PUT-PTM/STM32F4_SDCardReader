@@ -95,8 +95,8 @@
     <File name="USB/usb_bsp.h" path="USB/usb_bsp.h" type="1"/>
     <File name="USB/usbd_msc_bot.c" path="USB/usbd_msc_bot.c" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
-    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
     <File name="SDIO/konfiguracja.h" path="konfiguracja.h" type="1"/>
@@ -112,8 +112,8 @@
     <File name="SDIO/stm324xg_eval_sdio_sd.h" path="stm324xg_eval_sdio_sd.h" type="1"/>
     <File name="USB/usbd_usr.c" path="USB/usbd_usr.c" type="1"/>
     <File name="USB" path="" type="2"/>
-    <File name="USB/usb_dcd_int.c" path="USB/usb_dcd_int.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="USB/usb_dcd_int.c" path="USB/usb_dcd_int.c" type="1"/>
     <File name="USB/usbd_msc_bot.h" path="USB/usbd_msc_bot.h" type="1"/>
     <File name="USB/stm32fxxx_it.h" path="USB/stm32fxxx_it.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
@@ -126,8 +126,8 @@
     <File name="USB/usbd_desc.h" path="USB/usbd_desc.h" type="1"/>
     <File name="USB/usbd_msc_core.h" path="USB/usbd_msc_core.h" type="1"/>
     <File name="USB/usbd_msc_scsi.h" path="USB/usbd_msc_scsi.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_sdio.c" path="cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_sdio.h" path="cmsis_lib/include/stm32f4xx_sdio.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_sdio.c" path="cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
     <File name="SDIO/stm324xg_eval_sdio_sd.c" path="stm324xg_eval_sdio_sd.c" type="1"/>
     <File name="USB/usb_conf.h" path="USB/usb_conf.h" type="1"/>
     <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
@@ -146,15 +146,15 @@
     <File name="USB/usbd_msc_data.c" path="USB/usbd_msc_data.c" type="1"/>
     <File name="USB/usbd_desc.c" path="USB/usbd_desc.c" type="1"/>
     <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
-    <File name="USB/usb_regs.h" path="USB/usb_regs.h" type="1"/>
-    <File name="cmsis_lib/include" path="" type="2"/>
     <File name="USB/usb_core.c" path="USB/usb_core.c" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="USB/usb_regs.h" path="USB/usb_regs.h" type="1"/>
     <File name="USB/usbd_msc_scsi.c" path="USB/usbd_msc_scsi.c" type="1"/>
     <File name="USB/usbd_msc_mem.h" path="USB/usbd_msc_mem.h" type="1"/>
-    <File name="USB/usb_bsp.c" path="USB/usb_bsp.c" type="1"/>
     <File name="USB/stm32fxxx_it.c" path="USB/stm32fxxx_it.c" type="1"/>
-    <File name="USB/usbd_core.c" path="USB/usbd_core.c" type="1"/>
+    <File name="USB/usb_bsp.c" path="USB/usb_bsp.c" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
+    <File name="USB/usbd_core.c" path="USB/usbd_core.c" type="1"/>
     <File name="USB/usbd_ioreq.h" path="USB/usbd_ioreq.h" type="1"/>
   </Files>
 </Project>

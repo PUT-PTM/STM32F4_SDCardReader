@@ -94,7 +94,7 @@
          <include file="..\..\..\USB\usb_core.h"/>
          <include file="..\..\..\USB\usb_conf.h"/>
       </source>
-      <source file="..\..\..\konfiguracja.h" lastModified="1454690e85d">
+      <source file="..\..\..\konfiguracja.h" lastModified="1457ef1d0b4">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\include.h"/>
       </source>
@@ -235,6 +235,9 @@
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1457af9e3a8">
       </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_sdio.h" lastModified="1454690e856">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1457b3b2717">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
       <source file="..\..\..\USB\usbd_msc_core.h" lastModified="1363aa6a6f0">

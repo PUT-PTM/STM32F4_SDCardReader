@@ -1,34 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.8.3 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=CzytnikSD.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\CzytnikSD -TC:\CooCox\CoIDE\configuration\ProgramData\CzytnikSD/arm-gcc-link.ld -g">
-      <target file="CzytnikSD.elf" lastModified="1457b3b30f0">
+      <target file="CzytnikSD.elf" lastModified="1457ef21b48">
          <source file="..\obj\stm32f4xx_syscfg.o" lastModified="1457b359ac0"/>
-         <source file="..\obj\usb_core.o" lastModified="1457b359cd7"/>
+         <source file="..\obj\usb_core.o" lastModified="1457ef1d959"/>
          <source file="..\obj\stm32f4xx_sdio.o" lastModified="1457b359e51"/>
-         <source file="..\obj\usbd_usr.o" lastModified="1457b359fe4"/>
+         <source file="..\obj\usbd_usr.o" lastModified="1457ef1dcf6"/>
          <source file="..\obj\startup_stm32f4xx.o" lastModified="1457b35a026"/>
          <source file="..\obj\stm32f4xx_crc.o" lastModified="1457b35a099"/>
-         <source file="..\obj\usbd_msc_core.o" lastModified="1457b35a24e"/>
-         <source file="..\obj\usbd_core.o" lastModified="1457b35a3f3"/>
-         <source file="..\obj\main.o" lastModified="1457b3b2cff"/>
+         <source file="..\obj\usbd_msc_core.o" lastModified="1457ef1e000"/>
+         <source file="..\obj\usbd_core.o" lastModified="1457ef1e3ff"/>
+         <source file="..\obj\main.o" lastModified="1457ef1e767"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="1457b35a52e"/>
-         <source file="..\obj\usbd_storage_msd.o" lastModified="1457b35a5b2"/>
-         <source file="..\obj\usbd_msc_scsi.o" lastModified="1457b35a707"/>
-         <source file="..\obj\usbd_desc.o" lastModified="1457b35abdd"/>
-         <source file="..\obj\konfiguracja.o" lastModified="1457b35ad49"/>
+         <source file="..\obj\usbd_storage_msd.o" lastModified="1457ef1ea27"/>
+         <source file="..\obj\usbd_msc_scsi.o" lastModified="1457ef1ee96"/>
+         <source file="..\obj\usbd_desc.o" lastModified="1457ef1f424"/>
+         <source file="..\obj\konfiguracja.o" lastModified="1457ef1f77e"/>
          <source file="..\obj\stm32f4xx_gpio.o" lastModified="1457b35aebd"/>
          <source file="..\obj\system_stm32f4xx.o" lastModified="1457b3b2e78"/>
          <source file="..\obj\stm32f4xx_dma.o" lastModified="1457b35afae"/>
-         <source file="..\obj\usb_bsp.o" lastModified="1457b35b123"/>
-         <source file="..\obj\usbd_req.o" lastModified="1457b35b1d1"/>
-         <source file="..\obj\usb_dcd_int.o" lastModified="1457b35b281"/>
-         <source file="..\obj\usbd_msc_data.o" lastModified="1457b35b3f2"/>
-         <source file="..\obj\stm324xg_eval_sdio_sd.o" lastModified="1457b35b858"/>
+         <source file="..\obj\usb_bsp.o" lastModified="1457ef1fb6a"/>
+         <source file="..\obj\usbd_req.o" lastModified="1457ef1ff83"/>
+         <source file="..\obj\usb_dcd_int.o" lastModified="1457ef20312"/>
+         <source file="..\obj\usbd_msc_data.o" lastModified="1457ef2065b"/>
+         <source file="..\obj\stm324xg_eval_sdio_sd.o" lastModified="1457ef209b0"/>
          <source file="..\obj\misc.o" lastModified="1457b35b8bf"/>
-         <source file="..\obj\usb_dcd.o" lastModified="1457b35ba5c"/>
-         <source file="..\obj\stm32fxxx_it.o" lastModified="1457b35bace"/>
-         <source file="..\obj\usbd_ioreq.o" lastModified="1457b35bb49"/>
-         <source file="..\obj\usbd_msc_bot.o" lastModified="1457b35bcc5"/>
+         <source file="..\obj\usb_dcd.o" lastModified="1457ef20c5d"/>
+         <source file="..\obj\stm32fxxx_it.o" lastModified="1457ef20f35"/>
+         <source file="..\obj\usbd_ioreq.o" lastModified="1457ef212ef"/>
+         <source file="..\obj\usbd_msc_bot.o" lastModified="1457ef215ee"/>
       </target>
    </processor>
 </history>
