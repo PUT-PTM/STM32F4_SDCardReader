@@ -4,7 +4,7 @@
 #include "include.h"
 
 
-#define SD_DETECT_PIN                    GPIO_Pin_0                 /* PH.0 - zmiana na 0*/
+#define SD_DETECT_PIN                    GPIO_Pin_1                 /* PH.1 - zmiana na 1*/
 #define SD_DETECT_GPIO_PORT              GPIOH                    /* GPIOH */
 #define SD_DETECT_GPIO_CLK               RCC_AHB1Periph_GPIOH
    

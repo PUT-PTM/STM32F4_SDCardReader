@@ -59,12 +59,23 @@
 <part id="46"/>
 <part id="47"/>
 <part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+<part id="52"/>
+<part id="53"/>
+<part id="54"/>
+<part id="55"/>
+<part id="56"/>
+<part id="57"/>
+<part id="58"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">&#x0A;<subPage horizontalPosition="0" selectedItemId="506" subPageIndex="2" verticalPosition="952"/>
+<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">
+<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="0" verticalPosition="0"/>
 </input>
 </editor>
 <editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
@@ -109,7 +120,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/main.c" title="main.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="493" selectionTopPixel="107"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="383" selectionTopPixel="73"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_req.c" partName="usbd_req.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/src/usbd_req.c" title="usbd_req.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/src/usbd_req.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/src/usbd_req.c"/>
@@ -249,21 +260,60 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm324xg_eval_sdio_sd.c" partName="stm324xg_eval_sdio_sd.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/stm324xg_eval_sdio_sd.c" title="stm324xg_eval_sdio_sd.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/stm324xg_eval_sdio_sd.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/SDIO/stm324xg_eval_sdio_sd.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="63167" selectionTopPixel="30685"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="konfiguracja.c" partName="konfiguracja.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/konfiguracja.c" title="konfiguracja.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/konfiguracja.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/SDIO/konfiguracja.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2922" selectionTopPixel="1275"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usb_bsp.c" partName="usb_bsp.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usb_bsp.c" title="usb_bsp.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usb_bsp.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usb_bsp.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
-</input>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="konfiguracja.h" partName="konfiguracja.h" path="C:/Users/rolek/Desktop/SD/CzytnikSD/konfiguracja.h" title="konfiguracja.h" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/konfiguracja.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/SDIO/konfiguracja.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="105" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_msc_bot.c" partName="usbd_msc_bot.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_msc_bot.c" title="usbd_msc_bot.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_msc_bot.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_msc_bot.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="1232" selectionTopPixel="357"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm324xg_eval_sdio_sd.h" partName="stm324xg_eval_sdio_sd.h" path="C:/Users/rolek/Desktop/SD/CzytnikSD/stm324xg_eval_sdio_sd.h" title="stm324xg_eval_sdio_sd.h" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/stm324xg_eval_sdio_sd.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/SDIO/stm324xg_eval_sdio_sd.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1248"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_storage_msd.c" partName="usbd_storage_msd.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_storage_msd.c" title="usbd_storage_msd.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_storage_msd.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_storage_msd.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="446" selectionTopPixel="5105"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_usr.h" partName="usbd_usr.h" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_usr.h" title="usbd_usr.h" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_usr.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_usr.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1758"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_req.h" partName="usbd_req.h" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_req.h" title="usbd_req.h" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_req.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_req.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1484"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_req.c" partName="usbd_req.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_req.c" title="usbd_req.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_req.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_req.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="10736"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_msc_scsi.h" partName="usbd_msc_scsi.h" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_msc_scsi.h" title="usbd_msc_scsi.h" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_msc_scsi.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_msc_scsi.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_msc_scsi.c" partName="usbd_msc_scsi.c" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_msc_scsi.c" title="usbd_msc_scsi.c" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_msc_scsi.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_msc_scsi.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="10394"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_conf.h" partName="usbd_conf.h" path="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_conf.h" title="usbd_conf.h" tooltip="C:/Users/rolek/Desktop/SD/CzytnikSD/USB/usbd_conf.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CzytnikSD/USB/usbd_conf.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2061" selectionTopPixel="1603"/>
 </editor>
 </editors>
 <views>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="23">
 <expanded>
 <element path="/CzytnikSD"/>
 <element path="/CzytnikSD/cmsis"/>
@@ -275,7 +325,7 @@
 <element path="/CzytnikSD/USB"/>
 </expanded>
 <selection>
-<element path="/CzytnikSD"/>
+<element path="/CzytnikSD/SDIO/konfiguracja.h"/>
 </selection>
 </viewState>
 </view>
@@ -289,7 +339,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.coocox.builder.ui.editors.ConfigEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -377,22 +427,7 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/cmsis_boot/system_stm32f4xx.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/cmsis_boot/stm32f4xx.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/cmsis_boot/system_stm32f4xx.h"/>
-<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
-<subPage horizontalPosition="0" selectedItemId="936" subPageIndex="2" verticalPosition="952"/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/src/usbd_storage_msd.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/src/usbd_req.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/src/usbd_msc_scsi.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/src/usbd_msc_core.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/inc/usb_conf.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/inc/usbd_conf.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/src/usbd_msc_bot.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/inc/usb_conf.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/src/usb_core.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/inc/usb_core.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/inc/usb_defines.h"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/C:/Users/rolek/Desktop/SD/CzytnikSD/USB/src/usb_regs.h"/>
@@ -422,139 +457,159 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/cmsis_boot/system_stm32f4xx.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/cmsis_boot/system_stm32f4xx.c"/>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+<org.coocox.builder.ui.editors.ConfigEditor/>
 </editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor/>
+</editor>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="0" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usb_bsp.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/SDIO/konfiguracja.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/SDIO/konfiguracja.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_msc_bot.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/SDIO/stm324xg_eval_sdio_sd.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/SDIO/stm324xg_eval_sdio_sd.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_storage_msd.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_usr.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_req.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_req.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_msc_scsi.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_msc_scsi.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/CzytnikSD/USB/usbd_conf.h"/>
 </editors>
-<item historyLabel="system_stm32f4xx.c" index="0">
-<position info="not_deleted" x="2845" y="3"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="0">
-<position info="not_deleted" x="8954" y="10"/>
-</item>
-<item historyLabel="stm32f4xx.h" index="1">
-<position info="not_deleted" x="3578" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="0">
-<position info="not_deleted" x="7867" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.h" index="2">
-<position info="not_deleted" x="1919" y="0"/>
-</item>
-<item historyLabel="system_stm32f4xx.c" index="0">
-<position info="not_deleted" x="7867" y="0"/>
-</item>
-<item historyLabel="Repository" index="3"/>
-<item historyLabel="usbd_storage_msd.c" index="4">
-<position info="not_deleted" x="6355" y="0"/>
-</item>
-<item historyLabel="usbd_req.c" index="5">
-<position info="not_deleted" x="20148" y="0"/>
-</item>
-<item historyLabel="usbd_msc_scsi.c" index="6">
-<position info="not_deleted" x="7685" y="56"/>
-</item>
-<item historyLabel="usbd_msc_core.c" index="7">
-<position info="not_deleted" x="2055" y="0"/>
-</item>
-<item historyLabel="main.c" index="8">
-<position info="not_deleted" x="493" y="0"/>
-</item>
-<item historyLabel="usbd_storage_msd.c" index="4">
-<position info="not_deleted" x="6355" y="0"/>
-</item>
-<item historyLabel="Repository" index="3"/>
-<item historyLabel="usbd_storage_msd.c" index="4">
-<position info="not_deleted" x="6355" y="0"/>
-</item>
-<item historyLabel="usb_conf.h" index="9">
-<position info="not_deleted" x="8205" y="5"/>
-</item>
-<item historyLabel="usbd_conf.h" index="10">
-<position info="not_deleted" x="1914" y="0"/>
-</item>
-<item historyLabel="usbd_msc_bot.c" index="11">
-<position info="not_deleted" x="1895" y="5"/>
-</item>
-<item historyLabel="usbd_msc_bot.c" index="11">
-<position info="not_deleted" x="9065" y="36"/>
-</item>
-<item historyLabel="usb_conf.h" index="9">
-<position info="not_deleted" x="7862" y="67"/>
-</item>
-<item historyLabel="usbd_msc_core.c" index="7">
-<position info="not_deleted" x="1841" y="28"/>
-</item>
-<item historyLabel="usb_conf.h" index="12">
-<position info="not_deleted" x="7222" y="67"/>
-</item>
-<item historyLabel="usb_core.c" index="13">
-<position info="not_deleted" x="8897" y="63"/>
-</item>
-<item historyLabel="usb_core.h" index="14">
+<item historyLabel="usb_core.h" index="1">
 <position info="not_deleted" x="6262" y="0"/>
 </item>
-<item historyLabel="usb_defines.h" index="15">
+<item historyLabel="usb_defines.h" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="usb_conf.h" index="12">
+<item historyLabel="usb_conf.h" index="0">
 <position info="not_deleted" x="1362" y="0"/>
 </item>
-<item historyLabel="usb_regs.h" index="16">
+<item historyLabel="usb_regs.h" index="3">
 <position info="not_deleted" x="22564" y="24"/>
 </item>
-<item historyLabel="usb_regs.h" index="17">
+<item historyLabel="usb_regs.h" index="4">
 <position info="not_deleted" x="1350" y="0"/>
 </item>
-<item historyLabel="usb_conf.h" index="12">
+<item historyLabel="usb_conf.h" index="0">
 <position info="not_deleted" x="1362" y="0"/>
 </item>
-<item historyLabel="usb_regs.h" index="16">
+<item historyLabel="usb_regs.h" index="3">
 <position info="not_deleted" x="12217" y="23"/>
 </item>
-<item historyLabel="usb_regs.h" index="16">
+<item historyLabel="usb_regs.h" index="3">
 <position info="not_deleted" x="1370" y="0"/>
 </item>
-<item historyLabel="Repository" index="18"/>
-<item historyLabel="Configuration" index="19"/>
-<item historyLabel="Repository" index="18"/>
-<item historyLabel="Repository" index="20"/>
-<item historyLabel="Repository" index="21"/>
-<item historyLabel="Repository" index="22"/>
-<item historyLabel="usbd_storage_msd.c" index="23">
+<item historyLabel="Repository" index="5"/>
+<item historyLabel="Configuration" index="6"/>
+<item historyLabel="Repository" index="5"/>
+<item historyLabel="Repository" index="7"/>
+<item historyLabel="Repository" index="8"/>
+<item historyLabel="Repository" index="9"/>
+<item historyLabel="usbd_storage_msd.c" index="10">
 <position info="not_deleted" x="5995" y="37"/>
 </item>
-<item historyLabel="usbd_usr.c" index="24">
+<item historyLabel="usbd_usr.c" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="25">
+<item historyLabel="main.c" index="12">
 <position info="not_deleted" x="493" y="0"/>
 </item>
-<item historyLabel="Repository" index="22"/>
-<item historyLabel="stm324xg_eval_sdio_sd.c" index="26">
+<item historyLabel="Repository" index="9"/>
+<item historyLabel="stm324xg_eval_sdio_sd.c" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="konfiguracja.c" index="27">
+<item historyLabel="konfiguracja.c" index="14">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="25">
+<item historyLabel="main.c" index="12">
 <position info="not_deleted" x="493" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_conf.h" index="28">
+<item historyLabel="stm32f4xx_conf.h" index="15">
 <position info="not_deleted" x="1424" y="0"/>
 </item>
-<item historyLabel="stm32f4xx.h" index="29">
+<item historyLabel="stm32f4xx.h" index="16">
 <position info="not_deleted" x="3578" y="0"/>
 </item>
-<item historyLabel="system_stm32f4xx.c" index="30">
+<item historyLabel="system_stm32f4xx.c" index="17">
 <position info="not_deleted" x="7794" y="0"/>
 </item>
-<item historyLabel="main.c" index="25">
+<item historyLabel="main.c" index="12">
 <position info="not_deleted" x="493" y="0"/>
 </item>
-<item historyLabel="system_stm32f4xx.c" index="31">
+<item historyLabel="system_stm32f4xx.c" index="18">
 <position info="not_deleted" x="12971" y="3"/>
 </item>
-<item active="true" historyLabel="Configuration" index="32"/>
+<item historyLabel="Configuration" index="19"/>
+<item historyLabel="Configuration" index="20"/>
+<item historyLabel="Repository" index="21"/>
+<item historyLabel="main.c" index="22">
+<position info="not_deleted" x="177" y="0"/>
+</item>
+<item historyLabel="usb_bsp.c" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="konfiguracja.c" index="24">
+<position info="not_deleted" x="2922" y="0"/>
+</item>
+<item historyLabel="konfiguracja.h" index="25">
+<position info="not_deleted" x="193" y="0"/>
+</item>
+<item historyLabel="usbd_msc_bot.c" index="26">
+<position info="not_deleted" x="1232" y="27"/>
+</item>
+<item historyLabel="konfiguracja.h" index="25">
+<position info="not_deleted" x="54" y="93"/>
+</item>
+<item historyLabel="stm324xg_eval_sdio_sd.c" index="27">
+<position info="not_deleted" x="20814" y="0"/>
+</item>
+<item historyLabel="main.c" index="22">
+<position info="not_deleted" x="177" y="0"/>
+</item>
+<item historyLabel="stm324xg_eval_sdio_sd.h" index="28">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="usbd_storage_msd.c" index="29">
+<position info="not_deleted" x="446" y="0"/>
+</item>
+<item historyLabel="usbd_usr.h" index="30">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="usbd_storage_msd.c" index="29">
+<position info="not_deleted" x="446" y="0"/>
+</item>
+<item historyLabel="usbd_req.h" index="31">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="usbd_req.c" index="32">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="usbd_msc_scsi.h" index="33">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="usbd_msc_scsi.c" index="34">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm324xg_eval_sdio_sd.c" index="27">
+<position info="not_deleted" x="63167" y="4"/>
+</item>
+<item historyLabel="usbd_conf.h" index="35">
+<position info="not_deleted" x="2061" y="0"/>
+</item>
+<item historyLabel="stm324xg_eval_sdio_sd.c" index="27">
+<position info="not_deleted" x="63167" y="4"/>
+</item>
+<item historyLabel="stm324xg_eval_sdio_sd.h" index="28">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="konfiguracja.h" index="25">
+<position info="not_deleted" x="54" y="93"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -562,10 +617,38 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_conf.h" tooltip="CzytnikSD/USB/usbd_conf.h">
+<persistable path="/CzytnikSD/USB/usbd_conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_msc_scsi.c" tooltip="CzytnikSD/USB/usbd_msc_scsi.c">
+<persistable path="/CzytnikSD/USB/usbd_msc_scsi.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_msc_scsi.h" tooltip="CzytnikSD/USB/usbd_msc_scsi.h">
+<persistable path="/CzytnikSD/USB/usbd_msc_scsi.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_req.c" tooltip="CzytnikSD/USB/usbd_req.c">
+<persistable path="/CzytnikSD/USB/usbd_req.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_req.h" tooltip="CzytnikSD/USB/usbd_req.h">
+<persistable path="/CzytnikSD/USB/usbd_req.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_usr.h" tooltip="CzytnikSD/USB/usbd_usr.h">
+<persistable path="/CzytnikSD/USB/usbd_usr.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_storage_msd.c" tooltip="CzytnikSD/USB/usbd_storage_msd.c">
+<persistable path="/CzytnikSD/USB/usbd_storage_msd.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm324xg_eval_sdio_sd.h" tooltip="CzytnikSD/SDIO/stm324xg_eval_sdio_sd.h">
+<persistable path="/CzytnikSD/SDIO/stm324xg_eval_sdio_sd.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_msc_bot.c" tooltip="CzytnikSD/USB/usbd_msc_bot.c">
+<persistable path="/CzytnikSD/USB/usbd_msc_bot.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="konfiguracja.h" tooltip="CzytnikSD/SDIO/konfiguracja.h">
+<persistable path="/CzytnikSD/SDIO/konfiguracja.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_bsp.c" tooltip="CzytnikSD/USB/usb_bsp.c">
+<persistable path="/CzytnikSD/USB/usb_bsp.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="konfiguracja.c" tooltip="CzytnikSD/SDIO/konfiguracja.c">
 <persistable path="/CzytnikSD/SDIO/konfiguracja.c"/>
@@ -576,38 +659,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_usr.c" tooltip="CzytnikSD/USB/usbd_usr.c">
 <persistable path="/CzytnikSD/USB/usbd_usr.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_storage_msd.c" tooltip="CzytnikSD/USB/usbd_storage_msd.c">
-<persistable path="/CzytnikSD/USB/usbd_storage_msd.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" tooltip="CzytnikSDV2/cmsis_boot/stm32f4xx_conf.h">
 <persistable path="/CzytnikSDV2/cmsis_boot/stm32f4xx_conf.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.h" tooltip="CzytnikSDV2/cmsis_boot/system_stm32f4xx.h">
-<persistable path="/CzytnikSDV2/cmsis_boot/system_stm32f4xx.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="konfiguracja.h" tooltip="CzytnikSDV2/konfiguracja.h">
-<persistable path="/CzytnikSDV2/konfiguracja.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="konfiguracja.c" tooltip="CzytnikSDV2/konfiguracja.c">
-<persistable path="/CzytnikSDV2/konfiguracja.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="CzytnikSDV2/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/CzytnikSDV2/cmsis_boot/startup/startup_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="CzytnikSDV2/main.c">
-<persistable path="/CzytnikSDV2/main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="CzytnikSDV2/cmsis_boot/system_stm32f4xx.c">
-<persistable path="/CzytnikSDV2/cmsis_boot/system_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_usr.c" tooltip="CzytnikSDV2/USB/usbd_usr.c">
-<persistable path="/CzytnikSDV2/USB/usbd_usr.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_otg.c" tooltip="CzytnikSDV2/USB/usb_otg.c">
-<persistable path="/CzytnikSDV2/USB/usb_otg.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_dcd_int.c" tooltip="CzytnikSDV2/USB/usb_dcd_int.c">
-<persistable path="/CzytnikSDV2/USB/usb_dcd_int.c"/>
 </file>
 </mruList>
 </workbench>
