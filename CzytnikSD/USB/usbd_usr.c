@@ -119,7 +119,6 @@ USBD_Usr_cb_TypeDef USR_cb =
 void USBD_USR_Init(void)
 {
  
-
 }
 
 /**

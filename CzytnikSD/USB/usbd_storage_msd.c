@@ -28,7 +28,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "usbd_msc_mem.h"
 #include "usb_conf.h"
-
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
   * @{
   */
@@ -133,7 +132,7 @@ USBD_STORAGE_cb_TypeDef  *USBD_STORAGE_fops = &USBD_MICRO_SDIO_fops;
 #ifndef USE_STM3210C_EVAL   
 extern SD_CardInfo SDCardInfo;
 #endif
-__IO uint32_t count = 0;
+
 /**
   * @}
   */ 
@@ -205,8 +204,7 @@ int8_t STORAGE_GetCapacity (uint8_t lun, uint32_t *block_num, uint32_t *block_si
   */
 int8_t  STORAGE_IsReady (uint8_t lun)
 {
-  
-#ifndef USE_STM3210C_EVAL  
+
   
   static int8_t last_status = 0;
 
@@ -221,12 +219,7 @@ int8_t  STORAGE_IsReady (uint8_t lun)
     last_status = -1;
     return (-1); 
   }  
-#else
-  if( SD_Init() != 0)
-  {
-    return (-1);
-  }  
-#endif
+
   return (0);
 }
 
@@ -262,7 +255,9 @@ int8_t STORAGE_Read (uint8_t lun,
     return -1;
   }
 #ifndef USE_STM3210C_EVAL 
+  GPIO_SetBits(GPIOD,GPIO_Pin_12);
   SD_WaitReadOperation();
+  GPIO_ResetBits(GPIOD,GPIO_Pin_12);
   while (SD_GetStatus() != SD_TRANSFER_OK);
 #endif    
   return 0;
@@ -288,8 +283,10 @@ int8_t STORAGE_Write (uint8_t lun,
   {
     return -1;
   }
-#ifndef USE_STM3210C_EVAL  
+#ifndef USE_STM3210C_EVAL
+  GPIO_SetBits(GPIOD,GPIO_Pin_14);
   SD_WaitWriteOperation();
+	GPIO_ResetBits(GPIOD,GPIO_Pin_14);
   while (SD_GetStatus() != SD_TRANSFER_OK);  
 #endif  
   return (0);

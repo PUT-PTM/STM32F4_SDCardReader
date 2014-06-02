@@ -37,7 +37,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "konfiguracja.h"
-#include "include.h"
 
 /** @addtogroup Utilities
   * @{
@@ -341,6 +340,64 @@ typedef struct
 #define SDIO_SECURE_DIGITAL_IO_COMBO_CARD          ((uint32_t)0x00000006)
 #define SDIO_HIGH_CAPACITY_MMC_CARD                ((uint32_t)0x00000007)
 
+
+#define LEDn                             4
+
+#define LED1_PIN                         GPIO_Pin_6
+#define LED1_GPIO_PORT                   GPIOG
+#define LED1_GPIO_CLK                    RCC_AHB1Periph_GPIOG
+
+#define LED2_PIN                         GPIO_Pin_8
+#define LED2_GPIO_PORT                   GPIOG
+#define LED2_GPIO_CLK                    RCC_AHB1Periph_GPIOG
+
+#define LED3_PIN                         GPIO_Pin_9
+#define LED3_GPIO_PORT                   GPIOI
+#define LED3_GPIO_CLK                    RCC_AHB1Periph_GPIOI
+
+#define LED4_PIN                         GPIO_Pin_7
+#define LED4_GPIO_PORT                   GPIOC
+#define LED4_GPIO_CLK                    RCC_AHB1Periph_GPIOC
+
+#define SD_DETECT_PIN                    GPIO_Pin_1
+#define SD_DETECT_GPIO_PORT              GPIOH
+#define SD_DETECT_GPIO_CLK               RCC_AHB1Periph_GPIOH
+
+#define SDIO_FIFO_ADDRESS                ((uint32_t)0x40012C80)
+
+#define SDIO_INIT_CLK_DIV                ((uint8_t)0x76)
+
+#define SDIO_TRANSFER_CLK_DIV            ((uint8_t)0x0)
+
+#define SD_SDIO_DMA                   DMA2
+#define SD_SDIO_DMA_CLK               RCC_AHB1Periph_DMA2
+
+#define SD_SDIO_DMA_STREAM3	          3
+#define SD_SDIO_DMA_STREAM6           6
+
+
+
+#ifdef SD_SDIO_DMA_STREAM3
+ #define SD_SDIO_DMA_STREAM            DMA2_Stream3
+ #define SD_SDIO_DMA_CHANNEL           DMA_Channel_4
+ #define SD_SDIO_DMA_FLAG_FEIF         DMA_FLAG_FEIF3
+ #define SD_SDIO_DMA_FLAG_DMEIF        DMA_FLAG_DMEIF3
+ #define SD_SDIO_DMA_FLAG_TEIF         DMA_FLAG_TEIF3
+ #define SD_SDIO_DMA_FLAG_HTIF         DMA_FLAG_HTIF3
+ #define SD_SDIO_DMA_FLAG_TCIF         DMA_FLAG_TCIF3
+ #define SD_SDIO_DMA_IRQn              DMA2_Stream3_IRQn
+ #define SD_SDIO_DMA_IRQHANDLER        DMA2_Stream3_IRQHandler
+#elif defined SD_SDIO_DMA_STREAM6
+ #define SD_SDIO_DMA_STREAM            DMA2_Stream6
+ #define SD_SDIO_DMA_CHANNEL           DMA_Channel_4
+ #define SD_SDIO_DMA_FLAG_FEIF         DMA_FLAG_FEIF6
+ #define SD_SDIO_DMA_FLAG_DMEIF        DMA_FLAG_DMEIF6
+ #define SD_SDIO_DMA_FLAG_TEIF         DMA_FLAG_TEIF6
+ #define SD_SDIO_DMA_FLAG_HTIF         DMA_FLAG_HTIF6
+ #define SD_SDIO_DMA_FLAG_TCIF         DMA_FLAG_TCIF6
+ #define SD_SDIO_DMA_IRQn              DMA2_Stream6_IRQn
+ #define SD_SDIO_DMA_IRQHANDLER        DMA2_Stream6_IRQHandler
+#endif
 /**
   * @}
   */ 
@@ -407,50 +464,3 @@ SD_Error SD_HighSpeed(void);
   */ 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-
-#define SD_DETECT_PIN                    GPIO_Pin_13                 /* PH.13 */
-#define SD_DETECT_GPIO_PORT              GPIOH                       /* GPIOH */
-#define SD_DETECT_GPIO_CLK               RCC_AHB1Periph_GPIOH
-
-#define SDIO_FIFO_ADDRESS                ((uint32_t)0x40012C80)
-/**
-  * @brief  SDIO Intialization Frequency (400KHz max)
-  */
-#define SDIO_INIT_CLK_DIV                ((uint8_t)0x76)
-/**
-  * @brief  SDIO Data Transfer Frequency (25MHz max)
-  */
-#define SDIO_TRANSFER_CLK_DIV            ((uint8_t)0x0)
-
-#define SD_SDIO_DMA                   DMA2
-#define SD_SDIO_DMA_CLK               RCC_AHB1Periph_DMA2
-
-#define SD_SDIO_DMA_STREAM3	          3
-#define SD_SDIO_DMA_STREAM6           6
-
-#ifdef SD_SDIO_DMA_STREAM3
- #define SD_SDIO_DMA_STREAM            DMA2_Stream3
- #define SD_SDIO_DMA_CHANNEL           DMA_Channel_4
- #define SD_SDIO_DMA_FLAG_FEIF         DMA_FLAG_FEIF3
- #define SD_SDIO_DMA_FLAG_DMEIF        DMA_FLAG_DMEIF3
- #define SD_SDIO_DMA_FLAG_TEIF         DMA_FLAG_TEIF3
- #define SD_SDIO_DMA_FLAG_HTIF         DMA_FLAG_HTIF3
- #define SD_SDIO_DMA_FLAG_TCIF         DMA_FLAG_TCIF3
- #define SD_SDIO_DMA_IRQn              DMA2_Stream3_IRQn
- #define SD_SDIO_DMA_IRQHANDLER        DMA2_Stream3_IRQHandler
-#elif defined SD_SDIO_DMA_STREAM6
- #define SD_SDIO_DMA_STREAM            DMA2_Stream6
- #define SD_SDIO_DMA_CHANNEL           DMA_Channel_4
- #define SD_SDIO_DMA_FLAG_FEIF         DMA_FLAG_FEIF6
- #define SD_SDIO_DMA_FLAG_DMEIF        DMA_FLAG_DMEIF6
- #define SD_SDIO_DMA_FLAG_TEIF         DMA_FLAG_TEIF6
- #define SD_SDIO_DMA_FLAG_HTIF         DMA_FLAG_HTIF6
- #define SD_SDIO_DMA_FLAG_TCIF         DMA_FLAG_TCIF6
- #define SD_SDIO_DMA_IRQn              DMA2_Stream6_IRQn
- #define SD_SDIO_DMA_IRQHANDLER        DMA2_Stream6_IRQHandler
-#endif /* SD_SDIO_DMA_STREAM3 */
-
-void SD_LowLevel_DeInit(void);
-void SD_LowLevel_Init(void);
-void SD_LowLevel_DMA_TxConfig(uint32_t *BufferSRC, uint32_t BufferSize);
-void SD_LowLevel_DMA_RxConfig(uint32_t *BufferDST, uint32_t BufferSize);
