@@ -8,11 +8,10 @@ Po podłączeniu mikrokontrolera przez port USB, czytnik kart traktowany jest ja
 Operacja zapisu sygnalizowana jest przez migotanie diody czerwonej, natomiast odcyztu zielonej.
 
 
-Prędkości
+Przepustowość
 ----------------------
 
-This project builds with the [CooCox IDE](http://www.coocox.org/index.html) - A great IDE for embedded ARM development - and the [GNU Tools for Arm](https://launchpad.net/gcc-arm-embedded).  Install the IDE and the GNU Tools, point the IDE to the GNU Tools bin directory, and start working on your ARMs!
-
+TBC
 
 Środowisko
 ---------------------------------------
