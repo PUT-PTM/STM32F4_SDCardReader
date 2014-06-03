@@ -14,6 +14,7 @@ Przepustowość
 Początkowo maksymalną prędkość jaką uzyskaliśmy było niecałe 400B/s korzystając z DMA i SDIO. Ostatecznie przepustowość prezentuje się następująco:
   - Zapis 0,77 MB/s
   - Odczyt 0,92 MB/s
+
 W teorii można byłoby wykorzystać tryb High Speed, lecz wymagany do tego jest zewnętrzny PHY, który umożliwiłby obsługę znacznie wyższej prędkości.
 
 Środowisko
