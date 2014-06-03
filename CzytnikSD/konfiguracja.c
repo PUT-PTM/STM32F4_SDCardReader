@@ -37,7 +37,7 @@ void SD_LowLevel_Init(void)
 {
   GPIO_InitTypeDef  GPIO_InitStructure;
 
-  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOD  | SD_DETECT_GPIO_CLK, ENABLE);
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOD , ENABLE);
 
   GPIO_PinAFConfig(GPIOC, GPIO_PinSource8, GPIO_AF_SDIO);
   GPIO_PinAFConfig(GPIOC, GPIO_PinSource9, GPIO_AF_SDIO);
@@ -60,29 +60,27 @@ void SD_LowLevel_Init(void)
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
   GPIO_Init(GPIOC, &GPIO_InitStructure);
 
-  GPIO_InitStructure.GPIO_Pin = SD_DETECT_PIN;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
-  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
-  GPIO_Init(SD_DETECT_GPIO_PORT, &GPIO_InitStructure);
 
   RCC_APB2PeriphClockCmd(RCC_APB2Periph_SDIO, ENABLE);
 
-  RCC_AHB1PeriphClockCmd(SD_SDIO_DMA_CLK, ENABLE);
+  RCC_AHB1PeriphClockCmd( RCC_AHB1Periph_DMA2, ENABLE);
 }
 
 
 
 void SD_LowLevel_DMA_TxConfig(uint32_t *BufferSRC, uint32_t BufferSize)
 {
+
+	//DMA (Zapis SD)
   DMA_InitTypeDef SDDMA_InitStructure;
 
-  DMA_ClearFlag(SD_SDIO_DMA_STREAM, SD_SDIO_DMA_FLAG_FEIF | SD_SDIO_DMA_FLAG_DMEIF | SD_SDIO_DMA_FLAG_TEIF | SD_SDIO_DMA_FLAG_HTIF | SD_SDIO_DMA_FLAG_TCIF);
+  DMA_ClearFlag( DMA2_Stream3, SD_SDIO_DMA_FLAG_FEIF | SD_SDIO_DMA_FLAG_DMEIF | SD_SDIO_DMA_FLAG_TEIF | SD_SDIO_DMA_FLAG_HTIF | SD_SDIO_DMA_FLAG_TCIF);
 
-  DMA_Cmd(SD_SDIO_DMA_STREAM, DISABLE);
+  DMA_Cmd( DMA2_Stream3, DISABLE);
 
-  DMA_DeInit(SD_SDIO_DMA_STREAM);
+  DMA_DeInit( DMA2_Stream3);
 
-  SDDMA_InitStructure.DMA_Channel = SD_SDIO_DMA_CHANNEL;
+  SDDMA_InitStructure.DMA_Channel = DMA_Channel_4;
   SDDMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)SDIO_FIFO_ADDRESS;
   SDDMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)BufferSRC;
   SDDMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral;
@@ -97,11 +95,11 @@ void SD_LowLevel_DMA_TxConfig(uint32_t *BufferSRC, uint32_t BufferSize)
   SDDMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;
   SDDMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_INC4;
   SDDMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_INC4;
-  DMA_Init(SD_SDIO_DMA_STREAM, &SDDMA_InitStructure);
-  DMA_ITConfig(SD_SDIO_DMA_STREAM, DMA_IT_TC, ENABLE);
-  DMA_FlowControllerConfig(SD_SDIO_DMA_STREAM, DMA_FlowCtrl_Peripheral);
+  DMA_Init( DMA2_Stream3, &SDDMA_InitStructure);
+  DMA_ITConfig( DMA2_Stream3, DMA_IT_TC, ENABLE);
+  DMA_FlowControllerConfig( DMA2_Stream3, DMA_FlowCtrl_Peripheral);
 
-  DMA_Cmd(SD_SDIO_DMA_STREAM, ENABLE);
+  DMA_Cmd( DMA2_Stream3, ENABLE);
 
 }
 
@@ -109,15 +107,16 @@ void SD_LowLevel_DMA_TxConfig(uint32_t *BufferSRC, uint32_t BufferSize)
 
 void SD_LowLevel_DMA_RxConfig(uint32_t *BufferDST, uint32_t BufferSize)
 {
+	//DMA (Odczyt SD)
   DMA_InitTypeDef SDDMA_InitStructure;
 
-  DMA_ClearFlag(SD_SDIO_DMA_STREAM, SD_SDIO_DMA_FLAG_FEIF | SD_SDIO_DMA_FLAG_DMEIF | SD_SDIO_DMA_FLAG_TEIF | SD_SDIO_DMA_FLAG_HTIF | SD_SDIO_DMA_FLAG_TCIF);
+  DMA_ClearFlag( DMA2_Stream3, SD_SDIO_DMA_FLAG_FEIF | SD_SDIO_DMA_FLAG_DMEIF | SD_SDIO_DMA_FLAG_TEIF | SD_SDIO_DMA_FLAG_HTIF | SD_SDIO_DMA_FLAG_TCIF);
 
-  DMA_Cmd(SD_SDIO_DMA_STREAM, DISABLE);
+  DMA_Cmd( DMA2_Stream3, DISABLE);
 
-  DMA_DeInit(SD_SDIO_DMA_STREAM);
+  DMA_DeInit( DMA2_Stream3);
 
-  SDDMA_InitStructure.DMA_Channel = SD_SDIO_DMA_CHANNEL;
+  SDDMA_InitStructure.DMA_Channel = DMA_Channel_4;
   SDDMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)SDIO_FIFO_ADDRESS;
   SDDMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)BufferDST;
   SDDMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
@@ -132,9 +131,9 @@ void SD_LowLevel_DMA_RxConfig(uint32_t *BufferDST, uint32_t BufferSize)
   SDDMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;
   SDDMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_INC4;
   SDDMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_INC4;
-  DMA_Init(SD_SDIO_DMA_STREAM, &SDDMA_InitStructure);
-  DMA_ITConfig(SD_SDIO_DMA_STREAM, DMA_IT_TC, ENABLE);
-  DMA_FlowControllerConfig(SD_SDIO_DMA_STREAM, DMA_FlowCtrl_Peripheral);
+  DMA_Init( DMA2_Stream3, &SDDMA_InitStructure);
+  DMA_ITConfig(DMA2_Stream3, DMA_IT_TC, ENABLE);
+  DMA_FlowControllerConfig( DMA2_Stream3, DMA_FlowCtrl_Peripheral);
 
-  DMA_Cmd(SD_SDIO_DMA_STREAM, ENABLE);
+  DMA_Cmd( DMA2_Stream3, ENABLE);
 }

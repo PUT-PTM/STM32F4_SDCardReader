@@ -370,7 +370,7 @@ typedef struct
 #define SDIO_TRANSFER_CLK_DIV            ((uint8_t)0x0)
 
 #define SD_SDIO_DMA                   DMA2
-#define SD_SDIO_DMA_CLK               RCC_AHB1Periph_DMA2
+
 
 #define SD_SDIO_DMA_STREAM3	          3
 #define SD_SDIO_DMA_STREAM6           6
@@ -378,8 +378,7 @@ typedef struct
 
 
 #ifdef SD_SDIO_DMA_STREAM3
- #define SD_SDIO_DMA_STREAM            DMA2_Stream3
- #define SD_SDIO_DMA_CHANNEL           DMA_Channel_4
+
  #define SD_SDIO_DMA_FLAG_FEIF         DMA_FLAG_FEIF3
  #define SD_SDIO_DMA_FLAG_DMEIF        DMA_FLAG_DMEIF3
  #define SD_SDIO_DMA_FLAG_TEIF         DMA_FLAG_TEIF3
